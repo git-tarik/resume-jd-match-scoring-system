@@ -1,16 +1,14 @@
 {
   "job_title": "Machine Learning Intern",
-  "required_skills": [
-    "Python",
-    "Machine Learning",
-    "SQL",
-    "Pandas",
-    "NLP"
-  ],
+  "required_skills": {
+    "critical": ["Python", "Machine Learning"],
+    "important": ["SQL", "Pandas"],
+    "nice_to_have": ["NLP"]
+  },
   "preferred_skills": [
     "Deep Learning",
     "TensorFlow"
   ],
   "education_requirement": "Computer Science or related field",
-  "experience_requirement": "Hands-on experience in machine learning projects or internships"
+  "experience_requirement": "Hands-on experience in machine learning or data-related projects"
 }

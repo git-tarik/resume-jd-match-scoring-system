@@ -7,17 +7,22 @@
   },
   "skills": [
     "Python",
-    "Machine Learning",
+    "ML",
     "SQL",
     "Pandas",
-    "Scikit-learn"
+    "Scikit Learn",
+    "NumPy",
+    "Data Analysis"
   ],
   "experience": [
     {
       "type": "Internship",
-      "domain": "Machine Learning",
+      "domain": "Machine Learning, Data Analysis",
       "duration_months": 6,
-      "description": "Worked on ML models for classification and data preprocessing"
+      "description": "Built machine learning models using Python, scikit-learn, and pandas for classification and data analysis tasks"
     }
+  ],
+  "certifications": [
+    "Machine Learning Foundations"
   ]
 }
