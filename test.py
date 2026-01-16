@@ -1,19 +1,9 @@
-from src.matcher import (
-    get_skill_sets,
-    find_matched_skills,
-    find_missing_skills,
-    calculate_match_ratio
+from src.scorer import calculate_final_score
+
+score = calculate_final_score(
+    match_ratio=0.8,
+    has_relevant_experience=True,
+    is_education_relevant=True
 )
 
-student = ["python", "machine learning", "sql"]
-job = ["python", "machine learning", "nlp"]
-
-student_set, job_set = get_skill_sets(student, job)
-
-matched = find_matched_skills(student_set, job_set)
-missing = find_missing_skills(student_set, job_set)
-ratio = calculate_match_ratio(matched, len(job_set))
-
-print("Matched:", matched)
-print("Missing:", missing)
-print("Match ratio:", ratio)
+print(score)
