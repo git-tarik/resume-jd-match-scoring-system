@@ -1,4 +1,4 @@
-# JD Match Scoring System
+# RESUME/CV-JD-Match Scoring System
 
 ## Problem Statement
 The goal of this project is to design a simple and explainable system that evaluates how well a student’s CV/profile matches a given job description.  
