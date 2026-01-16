@@ -1,0 +1,23 @@
+{
+  "name": "Sample Candidate",
+  "education": {
+    "degree": "B.Tech",
+    "branch": "Computer Science",
+    "specialization": "Machine Learning"
+  },
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "SQL",
+    "Pandas",
+    "Scikit-learn"
+  ],
+  "experience": [
+    {
+      "type": "Internship",
+      "domain": "Machine Learning",
+      "duration_months": 6,
+      "description": "Worked on ML models for classification and data preprocessing"
+    }
+  ]
+}

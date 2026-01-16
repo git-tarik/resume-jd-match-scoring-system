@@ -1,0 +1,16 @@
+{
+  "job_title": "Machine Learning Intern",
+  "required_skills": [
+    "Python",
+    "Machine Learning",
+    "SQL",
+    "Pandas",
+    "NLP"
+  ],
+  "preferred_skills": [
+    "Deep Learning",
+    "TensorFlow"
+  ],
+  "education_requirement": "Computer Science or related field",
+  "experience_requirement": "Hands-on experience in machine learning projects or internships"
+}
