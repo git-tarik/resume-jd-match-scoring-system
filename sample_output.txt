@@ -1,0 +1,7 @@
+JD Match Score: 88.0%
+
+Explanation:
+Matched 4 out of 5 required skills (machine learning, pandas, python, sql).
+Relevant internship or project experience contributes positively to the score.
+Educational background aligns with the job requirements.
+Missing required skills include: nlp.
