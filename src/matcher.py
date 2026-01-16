@@ -19,11 +19,11 @@ def find_missing_skills(student_skills: set, job_required_skills: set) -> set:
     return job_required_skills.difference(student_skills)
 
 
-def calculate_match_ratio(matched_skills: set, total_required_skills: int) -> float:
+def calculate_match_ratio(matched_skills: set, total_required_skills: int, total_student_skills: int) -> float:
     
     #Calculates ratio of matched skills
     
-    if total_required_skills == 0:
+    if total_required_skills == 0 or total_student_skills == 0:
         return 0.0
 
     return len(matched_skills) / total_required_skills

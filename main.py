@@ -22,23 +22,28 @@ def main():
     job_description = load_json("data/job_description.json")
 
     # Preprocess skills
-    student_skills = preprocess_skill_list(student_profile["skills"])
-    job_required_skills = preprocess_skill_list(job_description["required_skills"])
+    student_skills = preprocess_skill_list(student_profile.get("skills", []))
+    job_required_skills = preprocess_skill_list(job_description.get("required_skills", []))
+
 
     # Matching logic
     student_set, job_set = get_skill_sets(student_skills, job_required_skills)
     matched_skills = find_matched_skills(student_set, job_set)
     missing_skills = find_missing_skills(student_set, job_set)
-    match_ratio = calculate_match_ratio(matched_skills, len(job_set))
+    match_ratio = calculate_match_ratio(matched_skills, len(job_set),len(student_set))
 
     # Experience relevance (simple keyword-based logic)
     has_relevant_experience = any(
-        "machine learning" in exp["domain"].lower()
-        for exp in student_profile.get("experience", [])
+      any(
+          keyword in exp.get("domain", "").lower()
+          for keyword in ["machine learning", "ml", "data"]
+      )
+      for exp in student_profile.get("experience", [])
     )
 
     # Education relevance (simple check)
-    is_education_relevant = "computer" in student_profile["education"]["branch"].lower()
+    education_branch = student_profile.get("education", {}).get("branch", "")
+    is_education_relevant = "computer" in education_branch.lower()
 
     # Scoring
     final_score = calculate_final_score(
